@@ -1,9 +1,4 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { FileBadge, Laptop, MessageCircle, LibraryBig, PlugZap, Mail } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -60,40 +55,40 @@ export const testimonials = [
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <Laptop />,
+    text: "Modalidad a distancia",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Acceso a las lecciones en todo tiempo y lugar. Esta modalidad se ajusta completamente a tus tiempos.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <FileBadge />,
+    text: "Suma habilidades",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Experimentar es necesario, pero muchas veces adquirir nuevas habilidades puede llevar demasiado.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <MessageCircle />,
+    text: "Contanos tu objetivo",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Contactanos y recibe una devolucion sobre tu trabajo y recomendaciones para continuar mejorando.",
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    icon: <LibraryBig />,
+    text: "Libreria de recursos",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Te ofrecemos una seccion de ebooks como material complementario completamente gratis que vamos actualizando mes a mes",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "Clases y cursos descargables",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "la ventaja de no depender estar online para tomar tu clase.",
   },
   {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    icon: <Mail />,
+    text: "Mejoremos la pagina",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Escribinos sugerencias sobre cursos y clases que necesites, para agregarlos en la pagina o bien subirlos en formato ebook.",
   },
 ];
 
