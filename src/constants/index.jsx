@@ -17,37 +17,37 @@ export const navItems = [
 export const testimonials = [
   {
     user: "Juan",
-    company: "Excelente material",
+    title: "Excelente material",
     image: user1,
     text: "Encontre mucha informacion util a la hora de mejorar mis habilidades como dibujante.",
   },
   {
     user: "Ana",
-    company: "Nuevos recursos",
+    title: "Nuevos recursos",
     image: user2,
     text: "Esperaba mejorar mis tecnicas al dibujar y gane mucho mas que solo eso",
   },
   {
     user: "David",
-    company: "Innovacion en aprendizaje",
+    title: "Innovacion en aprendizaje",
     image: user3,
     text: "Trabajando en conjunto con las profes , mejore considerablemente mis productos finales de ilustracion, lo que aumento mis ventas.",
   },
   {
     user: "Rosa",
-    company: "Feedback dinamico",
+    title: "Feedback dinamico",
     image: user4,
     text: "Obtuve respuestas rapidas y satisfactorias para mejorar de manera paulatina y consisa, entendiendo mi propio progreso",
   },
   {
     user: "Connie",
-    company: "Creatividad sin limites",
+    title: "Creatividad sin limites",
     image: user5,
     text: "Cambiando la mentalidad de obtener un resultado especifico, aprendi a ser mas abierta a las posibilidades que me brinda la obra en si misma.",
   },
   {
     user: "Emilia",
-    company: "Autoexploracion del arte",
+    title: "Autoexploracion del arte",
     image: user6,
     text: "Liuego de una serie de preguntas orientadas a mi trabajo, pude obtener una definicion del misma, lo que me ayudo a direccionarlo hacia donde yo realmente queria.",
   },
