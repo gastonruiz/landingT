@@ -1,5 +1,6 @@
 import { FileBadge, Laptop, MessageCircle, LibraryBig, PlugZap, Mail } from "lucide-react";
 
+
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
 import user3 from "../assets/profile-pictures/user3.jpg";
@@ -17,39 +18,39 @@ export const navItems = [
 export const testimonials = [
   {
     user: "Juan",
-    title: "Excelente material",
+    title: "Diseñador grafico",
     image: user1,
     text: "Encontre mucha informacion util a la hora de mejorar mis habilidades como dibujante.",
   },
   {
     user: "Ana",
-    title: "Nuevos recursos",
+    title: "Dibujante Freelance",
     image: user2,
     text: "Esperaba mejorar mis tecnicas al dibujar y gane mucho mas que solo eso",
   },
   {
     user: "David",
-    title: "Innovacion en aprendizaje",
+    title: "Ilustrador",
     image: user3,
     text: "Trabajando en conjunto con las profes , mejore considerablemente mis productos finales de ilustracion, lo que aumento mis ventas.",
   },
   {
     user: "Rosa",
-    title: "Feedback dinamico",
+    title: "Artista Plastica",
     image: user4,
-    text: "Obtuve respuestas rapidas y satisfactorias para mejorar de manera paulatina y consisa, entendiendo mi propio progreso",
+    text: "Obtuve respuestas rapidas y satisfactorias para mejorar de manera paulatina y consisa, entendiendo mi propio progreso. Una metodologia que funciona",
   },
   {
     user: "Connie",
-    title: "Creatividad sin limites",
+    title: "Diseñadora de interiores",
     image: user5,
-    text: "Cambiando la mentalidad de obtener un resultado especifico, aprendi a ser mas abierta a las posibilidades que me brinda la obra en si misma.",
+    text: "Cambiando la mentalidad de buscar un resultado especifico, aprendi a ser mas abierta a las posibilidades que me brinda la obra en si misma.",
   },
   {
     user: "Emilia",
-    title: "Autoexploracion del arte",
+    title: "Artista experimental",
     image: user6,
-    text: "Liuego de una serie de preguntas orientadas a mi trabajo, pude obtener una definicion del misma, lo que me ayudo a direccionarlo hacia donde yo realmente queria.",
+    text: "Luego de una serie de preguntas orientadas a mi trabajo, pude definirlo, lo que me ayudo a direccionarlo hacia donde yo realmente queria.",
   },
 ];
 

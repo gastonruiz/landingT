@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { features } from '../constants';
 
-const Nosotras = () => {
+const ItemSection = () => {
   return (
     <div className='relative mt-20 border-b border-neutral-800 min-h-[800px]'>
       <div className='text-center'>
@@ -36,4 +36,4 @@ const Nosotras = () => {
   );
 };
 
-export default Nosotras
+export default ItemSection

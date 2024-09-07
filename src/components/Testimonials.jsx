@@ -1,6 +1,6 @@
-import React from 'react'
+
 import { testimonials } from '../constants'
-import { Key } from 'lucide-react'
+
 
 const Testimonials = () => {
   return (
@@ -10,7 +10,7 @@ const Testimonials = () => {
         </h2>
         <div className='flex flex-wrap justify-center'>
             {testimonials.map((testimonials, index)=> (
-                <div Key={index} className='w-full sm:w-1/2 lg:w-1/3 px-4 py-2'>
+                <div key={index} className='w-full sm:w-1/2 lg:w-1/3 px-4 py-2'>
                     <div className='bg-neutral rounded-md p-6 text-md border border-neutral-800 font-thin'>
                         <p>{testimonials.text}</p>
                         <div className='flex mt-8 items-start'>
