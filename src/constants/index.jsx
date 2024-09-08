@@ -1,5 +1,11 @@
-import { FileBadge, Laptop, MessageCircle, LibraryBig, PlugZap, Mail } from "lucide-react";
-
+import {
+  FileBadge,
+  Laptop,
+  MessageCircle,
+  LibraryBig,
+  PlugZap,
+  Mail,
+} from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -9,10 +15,10 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Nosotras", href: "#" },
-  { label: "Cursos", href: "#" },
-  { label: "Galeria", href: "#" },
-  { label: "Contacto", href: "#" },
+  { name: "Nosotras", href: "/Nosotras" },
+  { name: "Cursos", href: "/Cursos" },
+  { name: "Galeria", href: "/Galeria" },
+  { name: "Contacto", href: "/Contacto" },
 ];
 
 export const testimonials = [
@@ -82,8 +88,7 @@ export const features = [
   {
     icon: <PlugZap />,
     text: "Clases y cursos descargables",
-    description:
-      "la ventaja de no depender estar online para tomar tu clase.",
+    description: "la ventaja de no depender estar online para tomar tu clase.",
   },
   {
     icon: <Mail />,
@@ -92,5 +97,3 @@ export const features = [
       "Escribinos sugerencias sobre cursos y clases que necesites, para agregarlos en la pagina o bien subirlos en formato ebook.",
   },
 ];
-
-
