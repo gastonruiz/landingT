@@ -52,11 +52,16 @@ const Navbar = () => {
                 <li key={index} className="py-4">
                   <NavLink to={item.href}>{item.name}</NavLink>
                 </li>
-                //<li key={index} className='py-4'>
-                //  <NavLink to={item.href}>{item.name}</NavLink>
-                //</li>
               ))}
             </ul>
+            <div className="py-4">
+            <Link
+              to="/material"
+              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+            >
+              Material gratuito
+            </Link>
+          </div>
           </div>
         )}
       </div>
