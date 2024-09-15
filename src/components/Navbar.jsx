@@ -1,14 +1,34 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo2.png";
 import { navItems } from "../constants";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Maneja el clic fuera del menú
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobileDrawerOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
+  };
+
+  const handleMenuItemClick = () => {
+    setMobileDrawerOpen(false);
   };
 
   return (
@@ -44,24 +64,30 @@ const Navbar = () => {
         </div>
         {mobileDrawerOpen && (
           <div
-            className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center
-                lg:hidden"
+            ref={menuRef}
+            className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden"
           >
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <NavLink to={item.href}>{item.name}</NavLink>
+                  <NavLink
+                    to={item.href}
+                    onClick={handleMenuItemClick}
+                  >
+                    {item.name}
+                  </NavLink>
                 </li>
               ))}
             </ul>
             <div className="py-4">
-            <Link
-              to="/material"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
-            >
-              Material gratuito
-            </Link>
-          </div>
+              <Link
+                to="/material"
+                className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+                onClick={handleMenuItemClick}
+              >
+                Material gratuito
+              </Link>
+            </div>
           </div>
         )}
       </div>
